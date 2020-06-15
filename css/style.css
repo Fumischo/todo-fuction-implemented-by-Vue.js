@@ -2,115 +2,113 @@
 
 * {
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
-}
-
-
-/* .container .judge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .btn {
-  font-size: 18px;
-  padding: .5em 2em;
-  margin: .5em 0;
-  background-color: rgb(76, 180, 180);
-  border-radius: 5px;
-  transition: 2s ease;
-}
-
-.btn:hover {
-  opacity: .8;
-}
-
-.container .txt {
-  text-align: center;
-  margin-top: 10px;
-  line-height: 2;
-} */
-
-/* .passed {
-  font-size: 24px;
-  color: #e74c3c;
-}
-
-.button {
-  background: #fcfcfa;
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 2px 7px #3338;
-  font-size: 18px;
-  padding: 8px 16px;
-} */
-/* 
-.error {
-  color: #e74c3c;
-} */
-/* 
-a {
-  text-decoration: none;
-}
-
-.header-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
   margin: 0;
-  background: #eee;;
+  padding: 0;
 }
 
-.menu-item {
-  padding: 8px;
-  padding-left: 3em;
-  font-size: 18px;
+li {
   list-style: none;
 }
 
-.menu-item a {
-  color: #111;
+body {
+  height: 100vh;
+  background: #fcfcfa;
+  font-family: system-ui;
 }
 
-.menu-item a:hover {
-  border-bottom: 1px solid #111;
-} */
-
-/* ハンバーガーメニュー */
-.btn-humburger {
-  width: 56px;
-  height: 56px;
-  background: transparent;
-  position: relative;
+.wrap {
+  width: 960px;
+  height: auto;
+  padding: 0 0 50px;
+  margin: 0 auto;
 }
 
-.btn-humburger > div {
-  position: absolute;
-  width: 56px;
-  height: 3px;
-  transition: all 0.2s;
-  background-color: #000;
+/* TODOフォーム部分 */
+
+.todo-form {
+  text-align: center;
+  padding: 80px 0 50px;
 }
 
-.btn-humburger > div:first-child {
-  top: 15px;
-  left: 0;
+.todo-form > .add-button {
+  margin-left: 18px;
 }
 
-.btn-humburger > div:last-child {
-  bottom: 15px;
-  left: 0;
+.input-text {
+  width: 300px;
+  font-size: 32px;
+  padding: 12px 12px;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  border: none;
+  box-shadow: 0 0 12px #ccc;
 }
 
-.btn-humburger.is-active > div:first-child {
-  -webkit-transform: translateY(11px) rotate(45deg);
-  transform: translateY(11px) rotate(45deg);
+.add-button {
+  font-size: 32px;
+  padding: 12px 20px;
+  border: none;
+  -webkit-appearance: none;
+  background: rgb(170, 65, 165);
+  color: #eee;
+  border-radius: 4px;
 }
 
-.btn-humburger.is-active > div:last-child {
-  -webkit-transform: translateY(-10px) rotate(-45deg);
-  transform: translateY(-10px) rotate(-45deg);
+/* TODO一覧のスタイル */
+.list-area {
+  display: flex;
+  justify-content: space-between;
 }
 
+.list-area .area-complete,
+.list-area .area-incomplete {
+  width: 470px;
+}
+
+.list {
+  align-items: center;
+  background: #fefefe;
+  box-shadow: 0 2px 12px #cecece;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px 20px 10px 32px;
+  width: 100%;
+}
+
+.list:not(:first-child) {
+  margin-top: 16px;
+}
+.list-label {
+  font-size: 24px;
+}
+
+.list-button {
+  -webkit-appearance: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  color: #222;
+  background: #eee;
+}
+
+.list-button.button-done {
+  background: #4CAF50;
+  color: #eee;
+}
+
+.list-button.button-delete {
+  background: #f44336;
+  color: #eee;
+}
+
+.todo-title {
+  color: #333;
+  font-size: 32px;
+  text-align: center;
+}
+
+.todo-area {
+  margin-top: 36px;
+}
